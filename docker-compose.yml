@@ -1,0 +1,17 @@
+version: '3.8'  # Phiên bản của Docker Compose
+
+services:
+  sqlserver:  # Tên service (container)
+    image: mcr.microsoft.com/mssql/server:2022-latest  # Image của SQL Server
+    container_name: sqlserver  # Đặt tên container
+    restart: always  # Tự động khởi động lại nếu bị dừng
+    ports:
+      - "1433:1433"  # Map cổng 1433 của container với host
+    environment:
+      SA_PASSWORD: "admin@123"  # Mật khẩu cho user 'sa'
+      ACCEPT_EULA: "Y"  # Chấp nhận điều khoản sử dụng của Microsoft
+    volumes:
+      - ./sqlserver_data:/var/opt/mssql  # Gắn volume để lưu dữ liệu
+
+volumes:
+  sqlserver_data:  # Volume để lưu trữ database
