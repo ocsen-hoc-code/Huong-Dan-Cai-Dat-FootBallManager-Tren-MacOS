@@ -150,16 +150,13 @@ Truy cập link sau để tải Window 11 ARM:
 ![WMWare Fusion Image](VMWare-img/Step8.png)
 
 - Chọn kích thước ổ cứng cho máy ảo. -> Chọn Apply.
-![WMWare Fusion Image](VMWare-img/Step8.png)
+![WMWare Fusion Image](VMWare-img/Step9.png)
 
 - Nhấp vào biểu tượng Play để chạy máy ảo.
 ![WMWare Fusion Image](VMWare-img/Run-Virtual-Machine.png)
 
 - Khi màng hình với thông tin `Press any key to boot from CD or DVD` để tiến hành cài đặt Window 11, bạn có thể tham khảo các bước cài đặt trên mạng. Lưu ý phải nhớ mã PIN để cho những lần đăng nhập vào Window.
 ![WMWare Fusion Image](VMWare-img/Loading.png)
-
-- Chọn kích thước ổ cứng cho máy ảo. -> Chọn Apply.
-![WMWare Fusion Image](VMWare-img/Step8.png)
 
 - Sau khi cài xong và đăng nhập vào Window 11 -> Trên phần thực đơn (menu) chính của VMWare Fusion -> Chọn `Virtual Machine` -> Chọn `Install VMWare Tools`.
 ![WMWare Fusion Image](VMWare-img/Screen1.png)
