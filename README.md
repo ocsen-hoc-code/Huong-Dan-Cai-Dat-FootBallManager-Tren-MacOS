@@ -185,3 +185,80 @@ Chạy Azure Data Studio và thực hiện các bước sau để tiến hành t
     → Nhấp vào `setup.exe` để cài đặt mặc định  
     → **Restart máy ảo** sau khi cài để cập nhật độ phân giải và hỗ trợ phần cứng  
     ![VMWare Screen2](VMWare-img/Screen2.png)
+
+## ✅ Bước 7: Cài đặt FootBallManager trên máy ảo
+
+### 🔗 Tải về phần mềm cần thiết
+
+* Tải **QuanLyBongDa.zip** tại:
+  👉 [FootBallManager](https://drive.google.com/file/d/1Peu73PUbPSuc-xxpEAdH8pGOmXuaY383/view?usp=sharing)
+
+---
+
+### 🔧 Các bước cài đặt
+
+1. Giải nén file `QuanLyBongDa.zip`
+   ![FootBallManager Step 1](FootBallManager/Step1.png)
+
+2. Vào thư mục `QuanLyBongDa` → Giải nén tiếp tập tin `Release.zip`
+   ![FootBallManager Step 2](FootBallManager/Step2.png)
+
+3. Mở thư mục `Release`, sao chép file `SetupFBM.msi` (Command + C)
+   → Dán vào trong máy ảo (Ctrl + V)
+   ![FootBallManager Step 3](FootBallManager/Step3.png)
+
+4. Nhấp đúp vào tập tin `SetupFBM.msi` trong máy ảo để bắt đầu cài đặt
+   ![FootBallManager Step 4](FootBallManager/Step3.png)
+
+5. Chọn `Next` để tiếp tục
+   ![FootBallManager Step 5](FootBallManager/Step4.png)
+
+6. Chọn `Next` để xác nhận thư mục cài đặt
+
+   > 💡 **Lưu ý:** Ghi nhớ đường dẫn cài đặt (mặc định là:
+   > `C:\Program Files (x86)\Tuong_301\FBM`) để cấu hình file sau này
+   > ![FootBallManager Step 6](FootBallManager/Step5.png)
+
+7. Chọn `Next` một lần nữa để xác nhận
+   ![FootBallManager Step 7](FootBallManager/Step6.png)
+
+8. Chọn `Yes` để cho phép hệ điều hành cài đặt phần mềm
+   ![FootBallManager Step 8](FootBallManager/Step7.png)
+
+9. Chọn `Close` để hoàn tất quá trình cài đặt
+   ![FootBallManager Step 9](FootBallManager/Step8.png)
+
+10. Kiểm tra màn hình Desktop xem có icon phần mềm `FootBallManager`
+    → Nếu có, quá trình cài đặt đã thành công
+    ![FootBallManager Step 10](FootBallManager/Step9.png)
+
+---
+
+## ✅ Bước 8: Cập nhật cấu hình FootBallManager trên máy ảo
+
+### 🔗 Tải về file cấu hình
+
+* Tải **FootBallProject.exe.config** tại:
+  👉 [FootBallProject.exe.config](https://drive.google.com/file/d/183swd0mj32nYi0OfkoTn7NkcaCMEWGgp/view?usp=sharing)
+
+---
+
+### 🔧 Các bước cập nhật
+
+1. Trên máy Mac, mở Terminal và gõ lệnh sau để lấy IP nội bộ (IP Local):
+
+   ```bash
+   ipconfig getifaddr en0
+   ```
+
+   ![FootBallManager Step 11](FootBallManager/Step10.png)
+
+2. Mở tập tin `FootBallProject.exe.config` bằng trình soạn thảo (VD: Notepad++)
+   → Tìm và thay IP `192.168.50.9` thành IP Local bạn vừa lấy
+   ![FootBallManager Step 12](FootBallManager/Step11.png)
+
+3. Sao chép tập tin `FootBallProject.exe.config`
+   → Dán và ghi đè lên tập tin trong thư mục cài đặt phần mềm
+   (Mặc định: `C:\Program Files (x86)\Tuong_301\FBM`)
+   ![FootBallManager Step 13](FootBallManager/Step12.png)
+   ![FootBallManager Step 14](FootBallManager/Step13.png)
