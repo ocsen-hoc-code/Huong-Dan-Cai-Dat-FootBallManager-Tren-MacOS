@@ -113,53 +113,75 @@ Chạy Azure Data Studio và thực hiện các bước sau để tiến hành t
   + Mở Tables của database ***officialleague*** để xem các bảng giống như hình  
 ![Tables Image](Images/Tables.png)
 
-## ✅ Bước 6: Cài đặt VMWare để chạy Window 11 trên Mac OS với CPU M1/M2/M3/M4
+## ✅ Bước 6: Cài đặt VMWare để chạy Windows 11 trên macOS với CPU M1/M2/M3/M4
 
-Truy cập link sau để tải VMWare:
-👉 [https://drive.google.com/file/d/1c04Cp7eOti4FhwiP7Slsu1e6JVSGhfWF/view?usp=sharing](https://drive.google.com/file/d/1c04Cp7eOti4FhwiP7Slsu1e6JVSGhfWF/view?usp=sharing)
+### 🔗 Tải về phần mềm cần thiết
 
-Truy cập link sau để tải Window 11 ARM:
-👉 [https://drive.google.com/file/d/12p-OUDRGajjLio3tCdOY-umm_VRHSHTX/view?usp=sharing](https://drive.google.com/file/d/12p-OUDRGajjLio3tCdOY-umm_VRHSHTX/view?usp=sharing)
+- Tải **VMWare Fusion** tại:  
+👉 [VMWare Fusion Download](https://drive.google.com/file/d/1c04Cp7eOti4FhwiP7Slsu1e6JVSGhfWF/view?usp=sharing)
 
-- Nhấp 2 lần liên tục vào file VMware-Fusion-13.6.3-24585314_universal.dmg -> Sau đó nhấp 2 lần tiên tục vào biểu tượng VMWare Fusion
-![WMWare Fusion Image](VMWare-img/Step1.png)
+- Tải **Windows 11 ARM** tại:  
+👉 [Windows 11 ARM Download](https://drive.google.com/file/d/12p-OUDRGajjLio3tCdOY-umm_VRHSHTX/view?usp=sharing)
 
-- Nhấp vào `Install from disc or image`.
-![WMWare Fusion Image](VMWare-img/Step2.png)
+---
 
-- Nhấp vào `Use another disc or disc image ...` sẽ hiện một của sổ cho phép tìm kiếm tập tin, hãy chọn đến thư mục chứa tập tin `Windows11_26100.2033_Professional_en-us_arm64.iso` chính là tập tin Window 11 ARM. -> Chọn Ok -> Chọn Continue.
-![WMWare Fusion Image](VMWare-img/Step3.png)
+### 🔧 Các bước cài đặt
 
-- Để mặc định chọn Continue
-![WMWare Fusion Image](VMWare-img/Step4.png)
+1. Nhấp đúp vào file `VMware-Fusion-13.6.3-24585314_universal.dmg`  
+   → Sau đó tiếp tục nhấp đúp vào biểu tượng **VMWare Fusion**  
+   ![VMWare Step 1](VMWare-img/Step1.png)
 
-- Đặt mật khẩu cho máy ảo.
-![WMWare Fusion Image](VMWare-img/Step5.png)
+2. Chọn **Install from disc or image**  
+   ![VMWare Step 2](VMWare-img/Step2.png)
 
+3. Chọn **Use another disc or disc image...**  
+   → Dẫn đến file `Windows11_26100.2033_Professional_en-us_arm64.iso`  
+   → Chọn **OK** → Chọn **Continue**  
+   ![VMWare Step 3](VMWare-img/Step3.png)
 
-- Nhấp vào biểu tượng Mỏ Lết
-![WMWare Fusion Image](VMWare-img/Step5-2.png)
+4. Giữ mặc định → Chọn **Continue**  
+   ![VMWare Step 4](VMWare-img/Step4.png)
 
-- Chọn `Processor và Memory`.
-![WMWare Fusion Image](VMWare-img/Step6.png)
+5. Đặt **mật khẩu** cho máy ảo  
+   ![VMWare Step 5](VMWare-img/Step5.png)
 
-- Chọn lựa số nhân CPU và RAM cho máy ảo.
-![WMWare Fusion Image](VMWare-img/Step7.png)
+---
 
-- Chọn `Hard Disk`.
-![WMWare Fusion Image](VMWare-img/Step8.png)
+### ⚙️ Cấu hình máy ảo
 
-- Chọn kích thước ổ cứng cho máy ảo. -> Chọn Apply.
-![WMWare Fusion Image](VMWare-img/Step9.png)
+6. Nhấp vào biểu tượng **mỏ lết** để cấu hình  
+   ![VMWare Step 5-2](VMWare-img/Step5-2.png)
 
-- Nhấp vào biểu tượng Play để chạy máy ảo.
-![WMWare Fusion Image](VMWare-img/Run-Virtual-Machine.png)
+7. Chọn **Processor và Memory**  
+   ![VMWare Step 6](VMWare-img/Step6.png)
 
-- Khi màng hình với thông tin `Press any key to boot from CD or DVD` để tiến hành cài đặt Window 11, bạn có thể tham khảo các bước cài đặt trên mạng. Lưu ý phải nhớ mã PIN để cho những lần đăng nhập vào Window.
-![WMWare Fusion Image](VMWare-img/Loading.png)
+8. Chọn số **nhân CPU** và **RAM** mong muốn  
+   ![VMWare Step 7](VMWare-img/Step7.png)
 
-- Sau khi cài xong và đăng nhập vào Window 11 -> Trên phần thực đơn (menu) chính của VMWare Fusion -> Chọn `Virtual Machine` -> Chọn `Install VMWare Tools`.
-![WMWare Fusion Image](VMWare-img/Screen1.png)
+9. Chọn **Hard Disk** để cấu hình ổ cứng  
+   ![VMWare Step 8](VMWare-img/Step8.png)
 
-- Tìm vào thư mục gốc tên là `DVD Driver VMWare Tools` -> Nhấp vào tập tin `setup.exe` -> Tiến hành cài đặt theo mặt định. -> Sau đó restart lại máy ảo để cập nhập thông số màn hình tương thích với phần cứng của máy tính Macbook.
-![WMWare Fusion Image](VMWare-img/Screen2.png)
+10. Thiết lập dung lượng ổ cứng → Chọn **Apply**  
+    ![VMWare Step 9](VMWare-img/Step9.png)
+
+---
+
+### ▶️ Khởi chạy và hoàn tất
+
+11. Nhấp vào biểu tượng **Play** để chạy máy ảo  
+    ![VMWare Run VM](VMWare-img/Run-Virtual-Machine.png)
+
+12. Khi xuất hiện dòng `Press any key to boot from CD or DVD`  
+    → Nhấn phím bất kỳ để bắt đầu cài đặt Windows 11.  
+    → Lưu ý: Hãy **nhớ mã PIN** để đăng nhập sau này.  
+    ![VMWare Loading](VMWare-img/Loading.png)
+
+13. Sau khi cài đặt và đăng nhập Windows 11:  
+    → Trên menu chính của VMWare Fusion, chọn:  
+    **Virtual Machine** → **Install VMWare Tools**  
+    ![VMWare Screen1](VMWare-img/Screen1.png)
+
+14. Vào thư mục gốc `DVD Driver VMWare Tools`  
+    → Nhấp vào `setup.exe` để cài đặt mặc định  
+    → **Restart máy ảo** sau khi cài để cập nhật độ phân giải và hỗ trợ phần cứng  
+    ![VMWare Screen2](VMWare-img/Screen2.png)
